@@ -10,10 +10,10 @@ public class GeneradorIp {
 	public String generarIp() {
 		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < 3; i++) {
-			sb.append(generarNumero(1, 256));
-			sb.append(":");
+			sb.append(generarNumero(0, 254));
+			sb.append(".");
 		}
-		sb.append(generarNumero(1, 256));
+		sb.append(generarNumero(0, 254));
 
 		return sb.toString();
 	}
